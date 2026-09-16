@@ -1,0 +1,5 @@
+[
+  {"id": 1001, "name": "Information Systems 401", "course_code": "IS 401"},
+  {"id": 1002, "name": "Corporate Finance", "course_code": "FIN 201"},
+  {"id": 2001, "name": "Mentors International Pilot", "course_code": "MI 100"}
+]

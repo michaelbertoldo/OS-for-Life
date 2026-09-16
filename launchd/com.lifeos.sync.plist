@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Runs `lifeos sync` every 15 minutes as a LaunchAgent (not a LaunchDaemon,
+  so the login Keychain is available). Not loaded into launchd yet — that's
+  a "you" step (P1-17/P1-18): load it once real sources are syncing cleanly.
+
+    launchctl load ~/Library/LaunchAgents/com.lifeos.sync.plist
+    (first copy this file there, e.g.:
+     cp launchd/com.lifeos.sync.plist ~/Library/LaunchAgents/)
+
+  Known risk (see repo CLAUDE.md -> Lessons): this .venv's python is a
+  symlink into a conda install, and its editable package install has
+  intermittently gone stale (ModuleNotFoundError) until `uv sync
+  --reinstall-package lifeos`. If scheduled syncs start silently failing,
+  check that first.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.lifeos.sync</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/michaelbertoldo/Desktop/masterOS dashboard/.venv/bin/lifeos</string>
+        <string>sync</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>900</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/michaelbertoldo/Library/Logs/lifeos/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/michaelbertoldo/Library/Logs/lifeos/launchd.err.log</string>
+</dict>
+</plist>

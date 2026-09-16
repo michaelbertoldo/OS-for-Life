@@ -1,0 +1,21 @@
+[
+  {
+    "plannable_type": "assignment",
+    "course_id": 1001,
+    "html_url": "https://byu.instructure.com/courses/1001/assignments/5001",
+    "submissions": {"graded": false, "missing": false},
+    "plannable": {"id": 5001, "name": "Problem Set 4", "due_at": "2026-09-17T06:00:00Z", "points_possible": 20}
+  },
+  {
+    "plannable_type": "quiz",
+    "course_id": 1001,
+    "html_url": "https://byu.instructure.com/courses/1001/quizzes/5002",
+    "submissions": {"graded": true, "missing": false},
+    "plannable": {"id": 5002, "name": "Midterm Exam", "due_at": "2026-09-20T06:00:00Z", "points_possible": 100}
+  },
+  {
+    "plannable_type": "planner_note",
+    "course_id": null,
+    "plannable": {"id": 9001, "title": "Buy notebook", "todo_date": "2026-09-16T00:00:00Z"}
+  }
+]

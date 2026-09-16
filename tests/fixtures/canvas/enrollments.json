@@ -1,0 +1,16 @@
+[
+  {
+    "type": "StudentEnrollment",
+    "course_id": 1001,
+    "grades": {"current_score": 94.5, "current_grade": "A"}
+  },
+  {
+    "type": "StudentEnrollment",
+    "course_id": 1002,
+    "grades": {}
+  },
+  {
+    "type": "TeacherEnrollment",
+    "course_id": 2001
+  }
+]

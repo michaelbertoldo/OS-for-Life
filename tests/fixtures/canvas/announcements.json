@@ -1,0 +1,18 @@
+[
+  {
+    "id": 6001,
+    "title": "Class canceled Friday",
+    "posted_at": "2026-09-15T18:00:00Z",
+    "read_state": "unread",
+    "context_code": "course_1001",
+    "html_url": "https://byu.instructure.com/courses/1001/discussion_topics/6001"
+  },
+  {
+    "id": 6002,
+    "title": "Old announcement, already read",
+    "posted_at": "2026-09-01T18:00:00Z",
+    "read_state": "read",
+    "context_code": "course_1001",
+    "html_url": "https://byu.instructure.com/courses/1001/discussion_topics/6002"
+  }
+]
